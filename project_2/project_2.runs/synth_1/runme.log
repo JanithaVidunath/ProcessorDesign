@@ -1,0 +1,625 @@
+
+*** Running vivado
+    with args -log Datapath.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Datapath.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Datapath.tcl -notrace
+Command: synth_design -top Datapath -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12480 
+WARNING: [Synth 8-2611] redeclaration of ansi port IR_out is not allowed [D:/Semester 5/Processor/CODES/Bus.v:11]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 369.082 ; gain = 111.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Datapath' [D:/Semester 5/Processor/CODES/Datapath.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DRAM' [D:/Semester 5/Processor/CODES/DRAM.v:3]
+WARNING: [Synth 8-2898] ignoring malformed $readmem task: invalid memory name [D:/Semester 5/Processor/CODES/DRAM.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DRAM' (1#1) [D:/Semester 5/Processor/CODES/DRAM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IRAM' [D:/Semester 5/Processor/CODES/IRAM.v:3]
+INFO: [Synth 8-3876] $readmem data file 'D:/Semester 5/Processor/CODES/opcodes.txt' is read successfully [D:/Semester 5/Processor/CODES/IRAM.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'IRAM' (2#1) [D:/Semester 5/Processor/CODES/IRAM.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Bus' [D:/Semester 5/Processor/CODES/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MUX' [D:/Semester 5/Processor/CODES/MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MUX' (3#1) [D:/Semester 5/Processor/CODES/MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MAR' [D:/Semester 5/Processor/CODES/MAR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MAR' (4#1) [D:/Semester 5/Processor/CODES/MAR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MDR' [D:/Semester 5/Processor/CODES/MDR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MDR' (5#1) [D:/Semester 5/Processor/CODES/MDR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/Semester 5/Processor/CODES/PC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (6#1) [D:/Semester 5/Processor/CODES/PC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'IR' [D:/Semester 5/Processor/CODES/IR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (7#1) [D:/Semester 5/Processor/CODES/IR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GPR2' [D:/Semester 5/Processor/CODES/GPR2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GPR2' (8#1) [D:/Semester 5/Processor/CODES/GPR2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GPR1' [D:/Semester 5/Processor/CODES/GPR1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GPR1' (9#1) [D:/Semester 5/Processor/CODES/GPR1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'AC' [D:/Semester 5/Processor/CODES/AC.v:3]
+WARNING: [Synth 8-6090] variable 'register' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Semester 5/Processor/CODES/AC.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'AC' (10#1) [D:/Semester 5/Processor/CODES/AC.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Bus' (11#1) [D:/Semester 5/Processor/CODES/Bus.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Semester 5/Processor/CODES/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Semester 5/Processor/CODES/ALU.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (12#1) [D:/Semester 5/Processor/CODES/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU_MUX' [D:/Semester 5/Processor/CODES/ALU_MUX.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_MUX' (13#1) [D:/Semester 5/Processor/CODES/ALU_MUX.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Controller' [D:/Semester 5/Processor/CODES/Controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Decoder' [D:/Semester 5/Processor/CODES/Decoder.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'Decoder' (14#1) [D:/Semester 5/Processor/CODES/Decoder.v:2]
+WARNING: [Synth 8-6090] variable 'IR_write' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Semester 5/Processor/CODES/Controller.v:240]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Semester 5/Processor/CODES/Controller.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'Controller' (15#1) [D:/Semester 5/Processor/CODES/Controller.v:3]
+WARNING: [Synth 8-350] instance 'Controller' of module 'Controller' requires 39 connections, but only 38 given [D:/Semester 5/Processor/CODES/Datapath.v:26]
+WARNING: [Synth 8-3848] Net PC_read in module/entity Datapath does not have driver. [D:/Semester 5/Processor/CODES/Datapath.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Datapath' (16#1) [D:/Semester 5/Processor/CODES/Datapath.v:1]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[23]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[22]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[21]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[20]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[19]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[18]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[17]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[16]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[15]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[14]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[13]
+WARNING: [Synth 8-3331] design ALU_MUX has unconnected port clk
+WARNING: [Synth 8-3331] design MUX has unconnected port clk
+WARNING: [Synth 8-3331] design Bus has unconnected port PC_read
+WARNING: [Synth 8-3331] design Bus has unconnected port MAR_read
+WARNING: [Synth 8-3331] design IRAM has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.223 ; gain = 932.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.223 ; gain = 932.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1190.223 ; gain = 932.879
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: [Synth 8-5546] ROM "dram_reg[270]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[269]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[268]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[267]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[266]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[265]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[264]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[263]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[262]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[261]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[260]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[259]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[258]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[257]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[256]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[255]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[254]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[253]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[252]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[251]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[250]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[249]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[248]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[247]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[246]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[245]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[244]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[243]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[242]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[241]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[240]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[239]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[238]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[237]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[236]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[235]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[234]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[233]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[232]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[231]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[230]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[229]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[228]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[227]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[226]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[225]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[224]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[223]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[222]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[221]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[220]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[219]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[218]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[217]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[216]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[215]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[214]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[213]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[212]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[211]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[210]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[209]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[208]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[207]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[206]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[205]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[204]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[203]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[202]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[201]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[200]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[199]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[198]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[197]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[196]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[195]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[194]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[193]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[192]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[191]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[190]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[189]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[188]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[187]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[186]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[185]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[184]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[183]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[182]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[181]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[180]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[179]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[178]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[177]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[176]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[175]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[174]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[173]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[172]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_reg[171]" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Semester 5/Processor/CODES/ALU.v:13]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <multiplier> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Semester 5/Processor/CODES/ALU.v:13]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [D:/Semester 5/Processor/CODES/ALU.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1190.223 ; gain = 932.879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 284   
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   8 Input     25 Bit        Muxes := 1     
+	 104 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	  14 Input     24 Bit        Muxes := 1     
+	   8 Input     24 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 2     
+	  22 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 273   
+	  22 Input      1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DRAM 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 271   
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 271   
+Module IRAM 
+Detailed RTL Component Info : 
++---Muxes : 
+	 104 Input     24 Bit        Muxes := 1     
+Module MAR 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module MDR 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module GPR2 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module GPR1 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+Module AC 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Bus 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input     24 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
++---Muxes : 
+	   8 Input     25 Bit        Muxes := 1     
+	   8 Input     24 Bit        Muxes := 3     
+Module ALU_MUX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+Module Controller 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 34    
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
+	  22 Input      4 Bit        Muxes := 2     
+	  22 Input      3 Bit        Muxes := 2     
+	  22 Input      1 Bit        Muxes := 45    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP p_1_out, operation Mode is: A*B.
+DSP Report: operator p_1_out is absorbed into DSP p_1_out.
+DSP Report: operator p_0_out is absorbed into DSP p_1_out.
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[23]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[22]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[21]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[20]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[19]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[18]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[17]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[16]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[15]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[14]
+WARNING: [Synth 8-3331] design Controller has unconnected port IR[13]
+WARNING: [Synth 8-3331] design Bus has unconnected port PC_read
+WARNING: [Synth 8-3331] design Bus has unconnected port MAR_read
+WARNING: [Synth 8-3331] design IRAM has unconnected port clk
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[23]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[22]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[21]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[20]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[19]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[18]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[17]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[16]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[15]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[14]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[13]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[12]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[11]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[10]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[9]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[8]
+WARNING: [Synth 8-3331] design IRAM has unconnected port addr_in[7]
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][23]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][22]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][21]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][20]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][19]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][18]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][17]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][16]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][15]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][14]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][13]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][12]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][11]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][10]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][9]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][8]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][7]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][6]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][5]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][4]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][3]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][2]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][1]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[270][0]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][23]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][22]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][21]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][20]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][19]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][18]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][17]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][16]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][15]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][14]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][13]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][12]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][11]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][10]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][9]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][8]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][7]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][6]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][5]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][4]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][3]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][2]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][1]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[269][0]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][23]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][22]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][21]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][20]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][19]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][18]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][17]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][16]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][15]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][14]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][13]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][12]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][11]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][10]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][9]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][8]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][7]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][6]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][5]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][4]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][3]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][2]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][1]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[268][0]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][23]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][22]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][21]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][20]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][19]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][18]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][17]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][16]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][15]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][14]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][13]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][12]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][11]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][10]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][9]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][8]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][7]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][6]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][5]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][4]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][3]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][2]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][1]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[267][0]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[266][23]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[266][22]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[266][21]) is unused and will be removed from module DRAM.
+WARNING: [Synth 8-3332] Sequential element (dram_reg[266][20]) is unused and will be removed from module DRAM.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Controller  | MDR_write  | 32x1          | LUT            | 
+|Controller  | AC_write   | 32x1          | LUT            | 
+|Controller  | ALU_MUX    | 32x1          | LUT            | 
+|Controller  | ALU_op     | 32x1          | LUT            | 
+|Controller  | MDR_write  | 32x1          | LUT            | 
+|Controller  | AC_write   | 32x1          | LUT            | 
+|Controller  | ALU_MUX    | 32x1          | LUT            | 
+|Controller  | ALU_op     | 32x1          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ALU         | A*B         | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6922 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1298.094 ; gain = 1040.750
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+147 Infos, 153 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1298.094 ; gain = 1053.809
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Semester 5/Processor/CODES/project_2/project_2.runs/synth_1/Datapath.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Datapath_utilization_synth.rpt -pb Datapath_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1298.094 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 13 21:20:18 2022...
